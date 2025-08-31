@@ -1,13 +1,38 @@
+"use client";
+
+import ContentBox from "@/shared/ui/content/ContentBox";
+import ContentWrapper from "@/shared/ui/content/ContentWrapper";
+import Click from "@/shared/ux/click/Click";
+
 export default function Home() {
   return (
-    <div>
-      <h1>my blog</h1>
+    <section>
+      <ContentBox>
+        <ContentWrapper className="h-[100vh]">
+          <h1>my blog</h1>
 
-      <p>this is my blog.</p>
+          <p>this is my blog.</p>
 
-      <h1>나의 블로그</h1>
+          <h1>나의 블로그</h1>
 
-      <p>이것은 나의 블로그.</p>
-    </div>
+          <p>이것은 나의 블로그.</p>
+
+          <p className="p-12"></p>
+        </ContentWrapper>
+      </ContentBox>
+      <ContentBox>
+        <ContentWrapper className="h-[100vh]">
+          <h1>my blog</h1>
+
+          <p>this is my blog.</p>
+
+          <h1>나의 블로그</h1>
+
+          <p>이것은 나의 블로그.</p>
+
+          <p className="p-12"></p>
+        </ContentWrapper>
+      </ContentBox>
+    </section>
   );
 }

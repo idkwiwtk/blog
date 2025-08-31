@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import MainPageLayout from "@/shared/ui/layout/MainPageLayout";
+import PageLayout from "@/shared/ui/layout/PageLayout";
 
 export const metadata: Metadata = {
   title: "My Blog",
@@ -16,7 +16,11 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet"
@@ -29,7 +33,7 @@ export default function RootLayout({
         ></link>
       </head>
       <body>
-        <MainPageLayout>{children}</MainPageLayout>
+        <PageLayout>{children}</PageLayout>
       </body>
     </html>
   );
