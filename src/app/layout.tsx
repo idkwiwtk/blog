@@ -25,6 +25,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* 나눔 글꼴 */}
+        <link
+          href="https://hangeul.pstatic.net/hangeul_static/css/nanum-gothic.css"
+          rel="stylesheet"
+        ></link>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
