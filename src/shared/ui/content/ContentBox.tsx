@@ -5,7 +5,9 @@ export interface ContentBoxProps {
 }
 
 const ContentBox = ({ children }: ContentBoxProps) => {
-  return <section className="max-w-1280 mx-auto">{children}</section>;
+  return (
+    <section className="max-w-content mx-auto w-content">{children}</section>
+  );
 };
 
 export default ContentBox;
