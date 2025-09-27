@@ -6,18 +6,22 @@
  */
 "use client";
 
-import Link from "next/link";
 import Logo from "@/entities/logo/ui/Logo";
 import ContentBox from "@/shared/ui/content/ContentBox";
 import ContentWrapper from "@/shared/ui/content/ContentWrapper";
 import Menu from "@/entities/menu/ui/Menu";
 import useScrollDirection from "@/shared/hook/useScollDirection";
+import { ScrollDirection } from "@/shared/hook/useScollDirection";
+
+const stickyHeader = (direction: ScrollDirection) => {
+  return direction == "up" && "sticky top-0";
+};
 
 const Header = () => {
-  const direction = useScrollDirection();
+  const direction: ScrollDirection = useScrollDirection();
 
   return (
-    <header className={`${direction == "up" && "sticky top-0"}`}>
+    <header className={`${stickyHeader(direction)}`}>
       <ContentBox>
         <ContentWrapper className="flex justify-between">
           <Logo />

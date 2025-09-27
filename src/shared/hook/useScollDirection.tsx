@@ -1,10 +1,10 @@
 "use client";
 import React, { useEffect, useState } from "react";
 
-export type ScrollDirection = "up" | "down";
+export type ScrollDirection = "up" | "down" | "none";
 
 const useScrollDirection = () => {
-  const [direction, setDirection] = useState<ScrollDirection>();
+  const [direction, setDirection] = useState<ScrollDirection>("none");
 
   const onWheel = (event: WheelEvent) => {
     if (event.deltaY > 0) {
