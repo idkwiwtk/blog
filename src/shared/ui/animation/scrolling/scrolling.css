@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  /* 커스텀 애니메이션 정의 */
+  --animate-scrolling: scrolling 10s linear infinite;
+}
+
+/* Keyframes 정의 */
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
