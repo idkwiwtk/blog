@@ -3,7 +3,7 @@
 import React, { ReactElement } from "react";
 
 export interface ClickProps {
-  children: ReactElement;
+  children: ReactElement<any>;
   // onClick: (e: React.MouseEvent<HTMLElement>) => {};
   // onClick: () => void;
 }
