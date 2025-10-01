@@ -5,10 +5,31 @@ const ScrollingWidget = () => {
   return (
     <div className={cn("border border-red-400", "p-5", "w-full")}>
       <Scrolling>
-        <Scrolling.Item>START</Scrolling.Item>
         <Scrolling.Item>
           test 1 12312312312312312312312312312312111231lasdfhaoiufhewlkj
         </Scrolling.Item>
+        <Scrolling.Item>
+          test 1 12312312312312312312312312312312111231lasdfhaoiufhewlkj
+        </Scrolling.Item>
+        <Scrolling.Item>
+          test 1 12312312312312312312312312312312111231lasdfhaoiufhewlkj
+        </Scrolling.Item>
+        <Scrolling.Item>
+          test 1 12312312312312312312312312312312111231lasdfhaoiufhewlkj
+        </Scrolling.Item>
+      </Scrolling>
+
+      <h1>scrolling width test</h1>
+      <Scrolling>
+        <Scrolling.Item>START</Scrolling.Item>
+        <Scrolling.Item>START</Scrolling.Item>
+        <Scrolling.Item>START</Scrolling.Item>
+        <Scrolling.Item>START</Scrolling.Item>
+        <Scrolling.Item>START</Scrolling.Item>
+        <Scrolling.Item>START</Scrolling.Item>
+        <Scrolling.Item>START</Scrolling.Item>
+        <Scrolling.Item>START</Scrolling.Item>
+        <Scrolling.Item>START</Scrolling.Item>
       </Scrolling>
     </div>
   );
