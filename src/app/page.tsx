@@ -7,10 +7,34 @@ import ScrollingWidget from "@/widgets/scrolling/scrolling";
 import { cn } from "@/shared/lib";
 import TextWidget from "@/widgets/text/text";
 import VideoWidget from "@/widgets/video/VideoWIdget";
+import Link from "next/link";
+
+const examplePages = [{ name: "browser", href: "/browser" }];
+
+const PageList = () => {
+  return (
+    <ul>
+      {examplePages.map((page, index) => {
+        return (
+          <li key={index}>
+            <h1>{page.name}</h1>
+            <Link href={page.href}>클릭하여 이동하기 {page.href}</Link>
+          </li>
+        );
+      })}
+    </ul>
+  );
+};
 
 export default function Home() {
   return (
     <section>
+      <ContentBox>
+        <ContentWrapper>
+          <PageList />
+        </ContentWrapper>
+      </ContentBox>
+
       <ContentBox>
         <ContentWrapper
           className={cn("h-[100vh]", "flex justify-center items-center")}
