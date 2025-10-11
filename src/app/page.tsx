@@ -6,10 +6,18 @@ import Click from "@/shared/ux/click/Click";
 import ScrollingWidget from "@/widgets/scrolling/scrolling";
 import { cn } from "@/shared/lib";
 import TextWidget from "@/widgets/text/text";
+import VideoWidget from "@/widgets/video/VideoWIdget";
 
 export default function Home() {
   return (
     <section>
+      <ContentBox>
+        <ContentWrapper
+          className={cn("h-[100vh]", "flex justify-center items-center")}
+        >
+          <VideoWidget />
+        </ContentWrapper>
+      </ContentBox>
       <ContentBox>
         <ContentWrapper
           className={cn("h-[100vh]", "flex justify-center items-center")}
