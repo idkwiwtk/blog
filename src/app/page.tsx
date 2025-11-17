@@ -34,30 +34,23 @@ export default function Home() {
           <PageList />
         </ContentWrapper>
       </ContentBox>
-
       <ContentBox>
-        <ContentWrapper
-          className={cn("h-[100vh]", "flex justify-center items-center")}
-        >
+        <ContentWrapper>
           <VideoWidget />
         </ContentWrapper>
       </ContentBox>
       <ContentBox>
-        <ContentWrapper
-          className={cn("h-[100vh]", "flex justify-center items-center")}
-        >
+        <ContentWrapper>
           <TextWidget />
         </ContentWrapper>
       </ContentBox>
       <ContentBox>
-        <ContentWrapper
-          className={cn("h-[100vh]", "flex justify-center items-center")}
-        >
+        <ContentWrapper>
           <ScrollingWidget />
         </ContentWrapper>
       </ContentBox>
       <ContentBox>
-        <ContentWrapper className="h-[100vh]">
+        <ContentWrapper>
           <h1>my blog</h1>
 
           <p>this is my blog.</p>

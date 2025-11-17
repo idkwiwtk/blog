@@ -23,7 +23,7 @@ const Header = () => {
   return (
     <header className={`${stickyHeader(direction)}`}>
       <ContentBox>
-        <ContentWrapper className="flex justify-between">
+        <ContentWrapper variant={"header"}>
           <Logo />
           <Menu />
         </ContentWrapper>
