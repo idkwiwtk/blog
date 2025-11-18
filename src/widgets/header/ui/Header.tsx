@@ -21,7 +21,7 @@ const Header = () => {
   const direction: ScrollDirection = useScrollDirection();
 
   return (
-    <header className={`${stickyHeader(direction)}`}>
+    <header className={`${stickyHeader(direction)} bg-background`}>
       <ContentBox>
         <ContentWrapper variant={"header"}>
           <Logo />
