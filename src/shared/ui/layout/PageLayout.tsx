@@ -9,7 +9,7 @@ const PageLayout = ({ children }: MainPageLayoutProps) => {
   return (
     <div className="relative">
       <Header />
-      <main>{children}</main>
+      <main className="mt-60">{children}</main>
     </div>
   );
 };

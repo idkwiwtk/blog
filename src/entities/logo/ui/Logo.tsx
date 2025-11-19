@@ -4,7 +4,10 @@ import Image from "next/image";
 const Logo = () => {
   return (
     <Link href={"/"}>
-      <Image src={"/next.svg"} width={120} height={60} alt="Logo Image" />
+      <div className="flex flex-col font-extrabold leading-3.5">
+        <span>Code</span>
+        <span>Stack</span>
+      </div>
     </Link>
   );
 };

@@ -2,8 +2,8 @@ import Link from "next/link";
 
 const Menu = () => {
   return (
-    <nav className="max-w-1/2 flex-1">
-      <ul className="flex justify-around">
+    <nav className="max-w-1/2 flex-1 flex items-center">
+      <ul className="flex-1 flex justify-around">
         <li>
           <Link href={"/"}>Home</Link>
         </li>

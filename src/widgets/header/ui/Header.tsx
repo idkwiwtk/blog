@@ -13,15 +13,15 @@ import Menu from "@/entities/menu/ui/Menu";
 import useScrollDirection from "@/shared/hook/useScollDirection";
 import { ScrollDirection } from "@/shared/hook/useScollDirection";
 
-const stickyHeader = (direction: ScrollDirection) => {
-  return direction == "up" && "sticky top-0";
-};
-
 const Header = () => {
   const direction: ScrollDirection = useScrollDirection();
 
   return (
-    <header className={`${stickyHeader(direction)} bg-background`}>
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 bg-background transition-transform duration-300 ease-in-out ${
+        direction === "down" ? "-translate-y-full" : "translate-y-0"
+      } border-b border-red`}
+    >
       <ContentBox>
         <ContentWrapper variant={"header"}>
           <Logo />
