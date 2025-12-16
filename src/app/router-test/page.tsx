@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { Suspense } from "react";
 import ContentBox from "@/shared/ui/content/ContentBox";
 import ContentWrapper from "@/shared/ui/content/ContentWrapper";
 import Link from "next/link";
@@ -14,7 +14,7 @@ const Content = ({ children }: { children: React.ReactNode }) => {
   return <p className="text-lg mb-8">{children}</p>;
 };
 
-const RouterTestPage = () => {
+const RouterTestContent = () => {
   const search = useSearchParams();
 
   const [name, setName] = React.useState<string>("");
@@ -77,6 +77,14 @@ const RouterTestPage = () => {
         </ContentWrapper>
       </ContentBox>
     </main>
+  );
+};
+
+const RouterTestPage = () => {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <RouterTestContent />
+    </Suspense>
   );
 };
 

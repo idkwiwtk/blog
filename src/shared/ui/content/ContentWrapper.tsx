@@ -1,5 +1,6 @@
 import React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
+import { cn } from "@/shared/lib";
 
 const contentWrapperVaritants = cva("p-12", {
   variants: {
@@ -12,10 +13,11 @@ const contentWrapperVaritants = cva("p-12", {
 export interface ContentWrapperProps
   extends VariantProps<typeof contentWrapperVaritants> {
   children: React.ReactNode;
+  className?: string;
 }
 
-const ContentWrapper = ({ children, variant }: ContentWrapperProps) => {
-  return <div className={contentWrapperVaritants({ variant })}>{children}</div>;
+const ContentWrapper = ({ children, variant, className }: ContentWrapperProps) => {
+  return <div className={cn(contentWrapperVaritants({ variant }), className)}>{children}</div>;
 };
 
 export default ContentWrapper;
