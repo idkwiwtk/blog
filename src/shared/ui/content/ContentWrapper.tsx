@@ -4,7 +4,7 @@ import { cva, type VariantProps } from "class-variance-authority";
 const contentWrapperVaritants = cva("p-12", {
   variants: {
     variant: {
-      header: "px-12 py-4 flex justify-between",
+      header: "px-12 py-20 flex justify-between",
     },
   },
 });

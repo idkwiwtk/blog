@@ -4,7 +4,7 @@ import Image from "next/image";
 const Logo = () => {
   return (
     <Link href={"/"}>
-      <div className="flex flex-col font-extrabold leading-3.5">
+      <div className="flex flex-col font-extrabold leading-13">
         <span>Code</span>
         <span>Stack</span>
       </div>

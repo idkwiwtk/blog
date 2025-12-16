@@ -8,6 +8,7 @@ import { cn } from "@/shared/lib";
 import TextWidget from "@/widgets/text/text";
 import VideoWidget from "@/widgets/video/VideoWIdget";
 import Link from "next/link";
+import MainCategoryPost from "@/widgets/categoryPost/ui/MainCategoryList";
 
 const examplePages = [{ name: "browser", href: "/browser" }];
 
@@ -31,7 +32,7 @@ export default function Home() {
     <section>
       <ContentBox>
         <ContentWrapper>
-          <PageList />
+          <MainCategoryPost />
         </ContentWrapper>
       </ContentBox>
       <ContentBox>

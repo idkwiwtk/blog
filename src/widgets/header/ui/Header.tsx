@@ -20,7 +20,7 @@ const Header = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 bg-background transition-transform duration-300 ease-in-out ${
         direction === "down" ? "-translate-y-full" : "translate-y-0"
-      } border-b border-red`}
+      } border-b border-black`}
     >
       <ContentBox>
         <ContentWrapper variant={"header"}>
