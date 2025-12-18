@@ -2,10 +2,10 @@ import React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/shared/lib";
 
-const contentWrapperVaritants = cva("p-12", {
+const contentWrapperVaritants = cva("px-16 py-12 md:px-20 md:py-16", {
   variants: {
     variant: {
-      header: "px-12 py-20 flex justify-between",
+      header: "flex justify-between items-center",
     },
   },
 });
@@ -16,8 +16,16 @@ export interface ContentWrapperProps
   className?: string;
 }
 
-const ContentWrapper = ({ children, variant, className }: ContentWrapperProps) => {
-  return <div className={cn(contentWrapperVaritants({ variant }), className)}>{children}</div>;
+const ContentWrapper = ({
+  children,
+  variant,
+  className,
+}: ContentWrapperProps) => {
+  return (
+    <div className={cn(contentWrapperVaritants({ variant }), className)}>
+      {children}
+    </div>
+  );
 };
 
 export default ContentWrapper;

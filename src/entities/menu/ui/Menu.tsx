@@ -1,21 +1,13 @@
-import Link from "next/link";
+import MenuItem from "./MenuItem";
+import { menuItems } from "../const/menuItem";
 
 const Menu = () => {
   return (
     <nav className="max-w-1/2 flex-1 flex items-center">
       <ul className="flex-1 flex justify-around">
-        <li>
-          <Link href={"/"}>Home</Link>
-        </li>
-        <li>
-          <Link href={"/"}>About</Link>
-        </li>
-        <li>
-          <Link href={"/"}>Posts</Link>
-        </li>
-        <li>
-          <Link href={"/"}>Contat</Link>
-        </li>
+        {menuItems.map((item) => (
+          <MenuItem key={item.name} name={item.name} href={item.href} />
+        ))}
       </ul>
     </nav>
   );

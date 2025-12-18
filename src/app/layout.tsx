@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "@/shared/css/content.css";
+import "@/shared/css/header.css";
 import "./globals.css";
 import PageLayout from "@/shared/ui/layout/PageLayout";
 
