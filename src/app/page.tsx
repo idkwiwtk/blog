@@ -169,9 +169,7 @@ export default function Home() {
                               key={i}
                               className="flex items-start gap-6 md:gap-8 text-13 md:text-14 text-slate-700 dark:text-slate-300"
                             >
-                              <span className="text-slate-400 text-6 mt-6">
-                                ●
-                              </span>
+                              <span className="text-slate-400 text-6">●</span>
                               <span>{achievement}</span>
                             </li>
                           ))}
